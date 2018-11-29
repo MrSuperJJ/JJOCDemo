@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E5D09E290C4BFB90DA453CB /* libPods-JJOCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EDAE7E6479BC5B6AC1512D /* libPods-JJOCDemo.a */; };
 		C7B5468B21AFCF89006CAE26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5468A21AFCF89006CAE26 /* AppDelegate.m */; };
-		C7B5468E21AFCF89006CAE26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5468D21AFCF89006CAE26 /* ViewController.m */; };
-		C7B5469121AFCF89006CAE26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B5468F21AFCF89006CAE26 /* Main.storyboard */; };
 		C7B5469321AFCF8B006CAE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B5469221AFCF8B006CAE26 /* Assets.xcassets */; };
 		C7B5469621AFCF8B006CAE26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B5469421AFCF8B006CAE26 /* LaunchScreen.storyboard */; };
 		C7B5469921AFCF8B006CAE26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5469821AFCF8B006CAE26 /* main.m */; };
+		C7B546A121AFD894006CAE26 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B546A021AFD894006CAE26 /* MainTableViewController.m */; };
+		C7B546A821AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B546A721AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m */; };
+		C7B546AB21AFE428006CAE26 /* JJMeituanRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B546AA21AFE428006CAE26 /* JJMeituanRefreshHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8084EAD31FA0CB017FB18DAC /* Pods-JJOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A71F569729A075D63A660F0E /* Pods-JJOCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJOCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C1EDAE7E6479BC5B6AC1512D /* libPods-JJOCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJOCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B5468621AFCF89006CAE26 /* JJOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B5468921AFCF89006CAE26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7B5468A21AFCF89006CAE26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7B5468C21AFCF89006CAE26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C7B5468D21AFCF89006CAE26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C7B5469021AFCF89006CAE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7B5469221AFCF8B006CAE26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7B5469521AFCF8B006CAE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7B5469721AFCF8B006CAE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7B5469821AFCF8B006CAE26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7B5469F21AFD894006CAE26 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		C7B546A021AFD894006CAE26 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		C7B546A621AFDE8C006CAE26 /* JJMeituanPullRefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJMeituanPullRefreshViewController.h; sourceTree = "<group>"; };
+		C7B546A721AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJMeituanPullRefreshViewController.m; sourceTree = "<group>"; };
+		C7B546A921AFE428006CAE26 /* JJMeituanRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJMeituanRefreshHeader.h; sourceTree = "<group>"; };
+		C7B546AA21AFE428006CAE26 /* JJMeituanRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJMeituanRefreshHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5D09E290C4BFB90DA453CB /* libPods-JJOCDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27AF30B9F9275939809A1378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A71F569729A075D63A660F0E /* Pods-JJOCDemo.debug.xcconfig */,
+				8084EAD31FA0CB017FB18DAC /* Pods-JJOCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7B5467D21AFCF89006CAE26 = {
 			isa = PBXGroup;
 			children = (
 				C7B5468821AFCF89006CAE26 /* JJOCDemo */,
 				C7B5468721AFCF89006CAE26 /* Products */,
+				27AF30B9F9275939809A1378 /* Pods */,
+				F8669B7D43461FB295A237CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +78,36 @@
 		C7B5468821AFCF89006CAE26 /* JJOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C7B546A521AFDE63006CAE26 /* 美团下拉刷新 */,
+				C7B5469F21AFD894006CAE26 /* MainTableViewController.h */,
+				C7B546A021AFD894006CAE26 /* MainTableViewController.m */,
 				C7B5468921AFCF89006CAE26 /* AppDelegate.h */,
 				C7B5468A21AFCF89006CAE26 /* AppDelegate.m */,
-				C7B5468C21AFCF89006CAE26 /* ViewController.h */,
-				C7B5468D21AFCF89006CAE26 /* ViewController.m */,
-				C7B5468F21AFCF89006CAE26 /* Main.storyboard */,
 				C7B5469221AFCF8B006CAE26 /* Assets.xcassets */,
 				C7B5469421AFCF8B006CAE26 /* LaunchScreen.storyboard */,
 				C7B5469721AFCF8B006CAE26 /* Info.plist */,
 				C7B5469821AFCF8B006CAE26 /* main.m */,
 			);
 			path = JJOCDemo;
+			sourceTree = "<group>";
+		};
+		C7B546A521AFDE63006CAE26 /* 美团下拉刷新 */ = {
+			isa = PBXGroup;
+			children = (
+				C7B546A621AFDE8C006CAE26 /* JJMeituanPullRefreshViewController.h */,
+				C7B546A721AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m */,
+				C7B546A921AFE428006CAE26 /* JJMeituanRefreshHeader.h */,
+				C7B546AA21AFE428006CAE26 /* JJMeituanRefreshHeader.m */,
+			);
+			path = "美团下拉刷新";
+			sourceTree = "<group>";
+		};
+		F8669B7D43461FB295A237CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDAE7E6479BC5B6AC1512D /* libPods-JJOCDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7B5469C21AFCF8B006CAE26 /* Build configuration list for PBXNativeTarget "JJOCDemo" */;
 			buildPhases = (
+				1902645C167435CF8AE8B8DC /* [CP] Check Pods Manifest.lock */,
 				C7B5468221AFCF89006CAE26 /* Sources */,
 				C7B5468321AFCF89006CAE26 /* Frameworks */,
 				C7B5468421AFCF89006CAE26 /* Resources */,
+				AE61EA1F5AD63D90A14338D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,18 +171,66 @@
 			files = (
 				C7B5469621AFCF8B006CAE26 /* LaunchScreen.storyboard in Resources */,
 				C7B5469321AFCF8B006CAE26 /* Assets.xcassets in Resources */,
-				C7B5469121AFCF89006CAE26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1902645C167435CF8AE8B8DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJOCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE61EA1F5AD63D90A14338D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7B5468221AFCF89006CAE26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B5468E21AFCF89006CAE26 /* ViewController.m in Sources */,
+				C7B546AB21AFE428006CAE26 /* JJMeituanRefreshHeader.m in Sources */,
+				C7B546A121AFD894006CAE26 /* MainTableViewController.m in Sources */,
+				C7B546A821AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m in Sources */,
 				C7B5469921AFCF8B006CAE26 /* main.m in Sources */,
 				C7B5468B21AFCF89006CAE26 /* AppDelegate.m in Sources */,
 			);
@@ -150,14 +239,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C7B5468F21AFCF89006CAE26 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7B5469021AFCF89006CAE26 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7B5469421AFCF8B006CAE26 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +364,7 @@
 		};
 		C7B5469D21AFCF8B006CAE26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A71F569729A075D63A660F0E /* Pods-JJOCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +382,7 @@
 		};
 		C7B5469E21AFCF8B006CAE26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8084EAD31FA0CB017FB18DAC /* Pods-JJOCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
