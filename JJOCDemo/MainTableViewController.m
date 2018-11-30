@@ -30,7 +30,6 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
     self.tableResultArray = @[@"美团下拉刷新"];
     
     [self.view addSubview:self.tableView];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,7 +76,7 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
 #pragma mark - getters and setters
 - (UITableView *)tableView {
     if (nil == _tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:mainCellIdentifier];

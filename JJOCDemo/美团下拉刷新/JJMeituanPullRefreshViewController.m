@@ -24,6 +24,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
+    
+    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+    JJMeituanRefreshHeader *header = [JJMeituanRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    // 隐藏时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    // 隐藏状态
+    header.stateLabel.hidden = YES;
+    // 设置header
+    self.tableView.mj_header = header;
+}
+
+#pragma mark - private methods
+- (void)loadNewData {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.tableView.mj_header endRefreshing];
+    });
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
@@ -40,16 +56,10 @@
 #pragma mark - getters and setters
 - (UITableView *)tableView {
     if (nil == _tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellReuseIdentifier"];
-        _tableView.mj_header = [JJMeituanRefreshHeader headerWithRefreshingBlock:^{
-            NSLog(@"11111");
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [self.tableView.mj_header endRefreshing];
-            });
-        }];
     }
     return _tableView;
 }
