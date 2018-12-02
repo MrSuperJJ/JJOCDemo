@@ -9,6 +9,7 @@
 #import "MainTableViewController.h"
 #import "JJMeituanPullRefreshViewController.h"
 #import "JJWeChatViewController.h"
+#import "JJQQViewController.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -28,7 +29,7 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
     [super viewDidLoad];
     
     self.title = @"Main";
-    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗"];
+    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件"];
     
     [self.view addSubview:self.tableView];
 }
@@ -67,6 +68,9 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
             break;
         case 1:
             detailViewController = [[JJWeChatViewController alloc] init];
+            break;
+        case 2:
+            detailViewController = [[JJQQViewController alloc] init];
             break;
         default:
             break;

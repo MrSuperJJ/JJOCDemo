@@ -14,6 +14,8 @@
 		46F47E5121B3FB4F00FA1CC3 /* JJAnimatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F47E4C21B3FB4F00FA1CC3 /* JJAnimatorView.m */; };
 		46F47E5221B3FB4F00FA1CC3 /* JJSemiCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F47E4D21B3FB4F00FA1CC3 /* JJSemiCircleView.m */; };
 		46F47E5521B3FB8D00FA1CC3 /* JJWeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F47E5421B3FB8D00FA1CC3 /* JJWeChatViewController.m */; };
+		46F47E5921B4022500FA1CC3 /* JJQQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F47E5821B4022500FA1CC3 /* JJQQViewController.m */; };
+		46F47E5C21B405F500FA1CC3 /* JJQQCustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F47E5B21B405F500FA1CC3 /* JJQQCustomNavBar.m */; };
 		C7B5468B21AFCF89006CAE26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5468A21AFCF89006CAE26 /* AppDelegate.m */; };
 		C7B5469321AFCF8B006CAE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B5469221AFCF8B006CAE26 /* Assets.xcassets */; };
 		C7B5469621AFCF8B006CAE26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B5469421AFCF8B006CAE26 /* LaunchScreen.storyboard */; };
@@ -36,6 +38,10 @@
 		46F47E4D21B3FB4F00FA1CC3 /* JJSemiCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSemiCircleView.m; sourceTree = "<group>"; };
 		46F47E5321B3FB8D00FA1CC3 /* JJWeChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJWeChatViewController.h; sourceTree = "<group>"; };
 		46F47E5421B3FB8D00FA1CC3 /* JJWeChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJWeChatViewController.m; sourceTree = "<group>"; };
+		46F47E5721B4022500FA1CC3 /* JJQQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJQQViewController.h; sourceTree = "<group>"; };
+		46F47E5821B4022500FA1CC3 /* JJQQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJQQViewController.m; sourceTree = "<group>"; };
+		46F47E5A21B405F500FA1CC3 /* JJQQCustomNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJQQCustomNavBar.h; sourceTree = "<group>"; };
+		46F47E5B21B405F500FA1CC3 /* JJQQCustomNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJQQCustomNavBar.m; sourceTree = "<group>"; };
 		8084EAD31FA0CB017FB18DAC /* Pods-JJOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A71F569729A075D63A660F0E /* Pods-JJOCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJOCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C1EDAE7E6479BC5B6AC1512D /* libPods-JJOCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJOCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +100,17 @@
 			path = "微信浮窗";
 			sourceTree = "<group>";
 		};
+		46F47E5621B401FC00FA1CC3 /* QQ可拉伸头部控件 */ = {
+			isa = PBXGroup;
+			children = (
+				46F47E5721B4022500FA1CC3 /* JJQQViewController.h */,
+				46F47E5821B4022500FA1CC3 /* JJQQViewController.m */,
+				46F47E5A21B405F500FA1CC3 /* JJQQCustomNavBar.h */,
+				46F47E5B21B405F500FA1CC3 /* JJQQCustomNavBar.m */,
+			);
+			path = "QQ可拉伸头部控件";
+			sourceTree = "<group>";
+		};
 		C7B5467D21AFCF89006CAE26 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +132,7 @@
 		C7B5468821AFCF89006CAE26 /* JJOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				46F47E5621B401FC00FA1CC3 /* QQ可拉伸头部控件 */,
 				C7B546A521AFDE63006CAE26 /* 美团下拉刷新 */,
 				46F47E4321B3FB4F00FA1CC3 /* 微信浮窗 */,
 				C7B5469F21AFD894006CAE26 /* MainTableViewController.h */,
@@ -290,6 +308,8 @@
 				46F47E5521B3FB8D00FA1CC3 /* JJWeChatViewController.m in Sources */,
 				C7B546AB21AFE428006CAE26 /* JJMeituanRefreshHeader.m in Sources */,
 				C7B546A121AFD894006CAE26 /* MainTableViewController.m in Sources */,
+				46F47E5921B4022500FA1CC3 /* JJQQViewController.m in Sources */,
+				46F47E5C21B405F500FA1CC3 /* JJQQCustomNavBar.m in Sources */,
 				46F47E5121B3FB4F00FA1CC3 /* JJAnimatorView.m in Sources */,
 				46F47E5021B3FB4F00FA1CC3 /* JJNextViewController.m in Sources */,
 				46F47E4E21B3FB4F00FA1CC3 /* JJAnimator.m in Sources */,

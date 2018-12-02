@@ -6,12 +6,12 @@
 //  Copyright © 2018 叶佳骏. All rights reserved.
 //
 
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
-
 #import "JJMeituanPullRefreshViewController.h"
 #import <MJRefresh/MJRefresh.h>
 #import "JJMeituanRefreshHeader.h"
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
 @interface JJMeituanPullRefreshViewController () <UITableViewDelegate, UITableViewDataSource>
 
