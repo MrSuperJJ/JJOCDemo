@@ -84,29 +84,28 @@
     }
 }
 
+#pragma mark - private methods
+- (NSArray *)arraryInComponent:(NSInteger)component {
+    NSInteger i = 0;
+    NSArray *array = self.districtNameArray[component];
+    while (i < component) {
+        array = array[[self.selectedRowArray[i] intValue]];
+        i++;
+    }
+    return array;
+}
+
 #pragma mark - UIPickerViewDelegate & UIPickerViewDataSource
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return self.districtNameArray.count;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    if (component == 0) {
-        return [self.districtNameArray[component] count];
-    } else if (component == 1) {
-        return [self.districtNameArray[component][[self.selectedRowArray[0] intValue]] count];
-    } else {
-        return [self.districtNameArray[component][[self.selectedRowArray[0] intValue]][[self.selectedRowArray[1] intValue]] count];
-    }
+    return [[self arraryInComponent:component] count];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    if (component == 0) {
-        return self.districtNameArray[component][row];
-    } else if (component == 1) {
-        return self.districtNameArray[component][[self.selectedRowArray[0] intValue]][row];
-    } else {
-        return self.districtNameArray[component][[self.selectedRowArray[0] intValue]][[self.selectedRowArray[1] intValue]][row];
-    }
+    return [self arraryInComponent:component][row];
 }
                                
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
