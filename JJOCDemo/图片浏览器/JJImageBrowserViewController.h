@@ -1,5 +1,5 @@
 //
-//  JJImageBrowseViewController.h
+//  JJImageBrowserViewController.h
 //  JJOCDemo
 //
 //  Created by Mr.JJ on 2018/12/2.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JJImageBrowseViewController : UIViewController
+@interface JJImageBrowserViewController : UIViewController
 
 - (instancetype)initWithImageArray:(NSArray *)imageArray imageSize:(CGSize)imageSize currentIndex:(NSInteger)currentIndex;
 

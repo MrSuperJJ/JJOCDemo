@@ -1,15 +1,15 @@
 //
-//  JJImageBrowseViewController.m
+//  JJImageBrowserViewController.m
 //  JJOCDemo
 //
 //  Created by Mr.JJ on 2018/12/2.
 //  Copyright © 2018 叶佳骏. All rights reserved.
 //
 
-#import "JJImageBrowseViewController.h"
+#import "JJImageBrowserViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface JJImageBrowseViewController ()
+@interface JJImageBrowserViewController ()
 
 @property (nonatomic, strong) UIScrollView *imageScrollView;
 
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation JJImageBrowseViewController
+@implementation JJImageBrowserViewController
 
 - (instancetype)initWithImageArray:(NSArray *)imageArray imageSize:(CGSize)imageSize currentIndex:(NSInteger)currentIndex {
     self = [super init];

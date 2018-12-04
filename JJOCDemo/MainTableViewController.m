@@ -10,7 +10,8 @@
 #import "JJMeituanPullRefreshViewController.h"
 #import "JJWeChatViewController.h"
 #import "JJQQViewController.h"
-#import "JJImageBrowseViewController.h"
+#import "JJImageBrowserViewController.h"
+#import "JJDistrictPickerViewController.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -30,7 +31,7 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
     [super viewDidLoad];
     
     self.title = @"Main";
-    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件", @"图片浏览器"];
+    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件", @"图片浏览器", @"地区选择器"];
     
     [self.view addSubview:self.tableView];
 }
@@ -80,10 +81,13 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
                 [imageArray addObject:image];
             }
             CGSize imageSize = [imageArray[0] size];
-            detailViewController = [[JJImageBrowseViewController alloc] initWithImageArray:imageArray imageSize:imageSize currentIndex:0];
+            detailViewController = [[JJImageBrowserViewController alloc] initWithImageArray:imageArray imageSize:imageSize currentIndex:0];
             [self presentViewController:detailViewController animated:YES completion:nil];
             return;
         }
+        case 4:
+            detailViewController = [[JJDistrictPickerViewController alloc] init];
+            break;
         default:
             break;
     }
