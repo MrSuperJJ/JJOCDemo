@@ -16,6 +16,7 @@
 		46F47E5521B3FB8D00FA1CC3 /* JJWeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F47E5421B3FB8D00FA1CC3 /* JJWeChatViewController.m */; };
 		46F47E5921B4022500FA1CC3 /* JJQQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F47E5821B4022500FA1CC3 /* JJQQViewController.m */; };
 		46F47E5C21B405F500FA1CC3 /* JJQQCustomNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F47E5B21B405F500FA1CC3 /* JJQQCustomNavBar.m */; };
+		C7714EFE21B61073000E09B4 /* JJImageBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7714EFD21B61073000E09B4 /* JJImageBrowseViewController.m */; };
 		C7B5468B21AFCF89006CAE26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5468A21AFCF89006CAE26 /* AppDelegate.m */; };
 		C7B5469321AFCF8B006CAE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B5469221AFCF8B006CAE26 /* Assets.xcassets */; };
 		C7B5469621AFCF8B006CAE26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B5469421AFCF8B006CAE26 /* LaunchScreen.storyboard */; };
@@ -45,6 +46,8 @@
 		8084EAD31FA0CB017FB18DAC /* Pods-JJOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A71F569729A075D63A660F0E /* Pods-JJOCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJOCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C1EDAE7E6479BC5B6AC1512D /* libPods-JJOCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJOCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7714EFC21B61072000E09B4 /* JJImageBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJImageBrowseViewController.h; sourceTree = "<group>"; };
+		C7714EFD21B61073000E09B4 /* JJImageBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJImageBrowseViewController.m; sourceTree = "<group>"; };
 		C7B5468621AFCF89006CAE26 /* JJOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B5468921AFCF89006CAE26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7B5468A21AFCF89006CAE26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,15 @@
 			path = "QQ可拉伸头部控件";
 			sourceTree = "<group>";
 		};
+		C7714EFB21B61064000E09B4 /* 图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				C7714EFC21B61072000E09B4 /* JJImageBrowseViewController.h */,
+				C7714EFD21B61073000E09B4 /* JJImageBrowseViewController.m */,
+			);
+			path = "图片浏览器";
+			sourceTree = "<group>";
+		};
 		C7B5467D21AFCF89006CAE26 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 		C7B5468821AFCF89006CAE26 /* JJOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C7714EFB21B61064000E09B4 /* 图片浏览器 */,
 				46F47E5621B401FC00FA1CC3 /* QQ可拉伸头部控件 */,
 				C7B546A521AFDE63006CAE26 /* 美团下拉刷新 */,
 				46F47E4321B3FB4F00FA1CC3 /* 微信浮窗 */,
@@ -178,7 +191,6 @@
 				C7B5468321AFCF89006CAE26 /* Frameworks */,
 				C7B5468421AFCF89006CAE26 /* Resources */,
 				AE61EA1F5AD63D90A14338D9 /* [CP] Copy Pods Resources */,
-				D36EC4FF30AD63D0C8B41485 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,7 +265,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE61EA1F5AD63D90A14338D9 /* [CP] Copy Pods Resources */ = {
@@ -278,25 +290,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D36EC4FF30AD63D0C8B41485 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -315,6 +308,7 @@
 				46F47E4E21B3FB4F00FA1CC3 /* JJAnimator.m in Sources */,
 				C7B546A821AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m in Sources */,
 				C7B5469921AFCF8B006CAE26 /* main.m in Sources */,
+				C7714EFE21B61073000E09B4 /* JJImageBrowseViewController.m in Sources */,
 				46F47E5221B3FB4F00FA1CC3 /* JJSemiCircleView.m in Sources */,
 				C7B5468B21AFCF89006CAE26 /* AppDelegate.m in Sources */,
 			);

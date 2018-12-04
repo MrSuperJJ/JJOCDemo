@@ -10,6 +10,7 @@
 #import "JJMeituanPullRefreshViewController.h"
 #import "JJWeChatViewController.h"
 #import "JJQQViewController.h"
+#import "JJImageBrowseViewController.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -29,7 +30,7 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
     [super viewDidLoad];
     
     self.title = @"Main";
-    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件"];
+    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件", @"图片浏览器"];
     
     [self.view addSubview:self.tableView];
 }
@@ -72,6 +73,17 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
         case 2:
             detailViewController = [[JJQQViewController alloc] init];
             break;
+        case 3: {
+            NSMutableArray *imageArray = [NSMutableArray array];
+            for (NSUInteger i = 1; i <= 6; i++) {
+                UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"loading_0%zd", i]];
+                [imageArray addObject:image];
+            }
+            CGSize imageSize = [imageArray[0] size];
+            detailViewController = [[JJImageBrowseViewController alloc] initWithImageArray:imageArray imageSize:imageSize currentIndex:0];
+            [self presentViewController:detailViewController animated:YES completion:nil];
+            return;
+        }
         default:
             break;
     }
