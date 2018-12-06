@@ -19,6 +19,7 @@
 		C7714EFE21B61073000E09B4 /* JJImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7714EFD21B61073000E09B4 /* JJImageBrowserViewController.m */; };
 		C7714F0521B6150B000E09B4 /* JJDistrictPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7714F0421B6150B000E09B4 /* JJDistrictPickerViewController.m */; };
 		C7714F0821B62C3C000E09B4 /* JJDistrictPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7714F0721B62C3C000E09B4 /* JJDistrictPickerView.m */; };
+		C77F556521B7890600221679 /* JJAnimationImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77F556421B7890600221679 /* JJAnimationImageViewController.m */; };
 		C7B5468B21AFCF89006CAE26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5468A21AFCF89006CAE26 /* AppDelegate.m */; };
 		C7B5469321AFCF8B006CAE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B5469221AFCF8B006CAE26 /* Assets.xcassets */; };
 		C7B5469621AFCF8B006CAE26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B5469421AFCF8B006CAE26 /* LaunchScreen.storyboard */; };
@@ -54,6 +55,9 @@
 		C7714F0421B6150B000E09B4 /* JJDistrictPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJDistrictPickerViewController.m; sourceTree = "<group>"; };
 		C7714F0621B62C3C000E09B4 /* JJDistrictPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJDistrictPickerView.h; sourceTree = "<group>"; };
 		C7714F0721B62C3C000E09B4 /* JJDistrictPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJDistrictPickerView.m; sourceTree = "<group>"; };
+		C77F556321B7890600221679 /* JJAnimationImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJAnimationImageViewController.h; sourceTree = "<group>"; };
+		C77F556421B7890600221679 /* JJAnimationImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJAnimationImageViewController.m; sourceTree = "<group>"; };
+		C77F556721B8C57800221679 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C7B5468621AFCF89006CAE26 /* JJOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B5468921AFCF89006CAE26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7B5468A21AFCF89006CAE26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -140,6 +144,15 @@
 			path = "地区选择器";
 			sourceTree = "<group>";
 		};
+		C77F556621B7895800221679 /* UIImageView动画图片 */ = {
+			isa = PBXGroup;
+			children = (
+				C77F556321B7890600221679 /* JJAnimationImageViewController.h */,
+				C77F556421B7890600221679 /* JJAnimationImageViewController.m */,
+			);
+			path = "UIImageView动画图片";
+			sourceTree = "<group>";
+		};
 		C7B5467D21AFCF89006CAE26 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +174,7 @@
 		C7B5468821AFCF89006CAE26 /* JJOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C77F556621B7895800221679 /* UIImageView动画图片 */,
 				C7714F0221B6149E000E09B4 /* 地区选择器 */,
 				C7714EFB21B61064000E09B4 /* 图片浏览器 */,
 				46F47E5621B401FC00FA1CC3 /* QQ可拉伸头部控件 */,
@@ -174,6 +188,7 @@
 				C7B5469421AFCF8B006CAE26 /* LaunchScreen.storyboard */,
 				C7B5469721AFCF8B006CAE26 /* Info.plist */,
 				C7B5469821AFCF8B006CAE26 /* main.m */,
+				C77F556721B8C57800221679 /* PrefixHeader.pch */,
 			);
 			path = JJOCDemo;
 			sourceTree = "<group>";
@@ -325,6 +340,7 @@
 				46F47E5121B3FB4F00FA1CC3 /* JJAnimatorView.m in Sources */,
 				46F47E5021B3FB4F00FA1CC3 /* JJNextViewController.m in Sources */,
 				46F47E4E21B3FB4F00FA1CC3 /* JJAnimator.m in Sources */,
+				C77F556521B7890600221679 /* JJAnimationImageViewController.m in Sources */,
 				C7B546A821AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m in Sources */,
 				C7B5469921AFCF8B006CAE26 /* main.m in Sources */,
 				C7714EFE21B61073000E09B4 /* JJImageBrowserViewController.m in Sources */,
@@ -467,7 +483,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAT87H825N;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JJOCDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = JJOCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,10 +503,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAT87H825N;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JJOCDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = JJOCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.JJOCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

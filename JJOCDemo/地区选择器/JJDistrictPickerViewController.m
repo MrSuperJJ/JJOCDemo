@@ -9,7 +9,7 @@
 #import "JJDistrictPickerViewController.h"
 #import "JJDistrictPickerView.h"
 
-@interface JJDistrictPickerViewController () <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface JJDistrictPickerViewController () <UIPickerViewDelegate, UIPickerViewDataSource, JJDistrictPickerViewDelegate>
 
 @property (nonatomic, strong) JJDistrictPickerView *districtPickerView;
 
@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.districtPickerView];
     self.districtNameArray = @[
@@ -95,6 +96,14 @@
     return array;
 }
 
+#pragma mark - JJDistrictPickerViewDelegate
+- (void)didClickConfirmButton {
+    NSString *provinceName = self.districtNameArray[0][[self.selectedRowArray[0] intValue]];
+    NSString *cityName = self.districtNameArray[1][[self.selectedRowArray[0] intValue]][[self.selectedRowArray[1] intValue]];
+    NSString *districtName = self.districtNameArray[2][[self.selectedRowArray[0] intValue]][[self.selectedRowArray[1] intValue]][[self.selectedRowArray[2] intValue]];
+    NSLog(@"%@", [NSString stringWithFormat:@"省：%@，市：%@，区：%@", provinceName, cityName, districtName]);
+}
+
 #pragma mark - UIPickerViewDelegate & UIPickerViewDataSource
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return self.districtNameArray.count;
@@ -115,19 +124,15 @@
     }
     self.selectedRowArray[component] = @(row);
     [pickerView reloadAllComponents];
-    
-    NSString *provinceName = self.districtNameArray[0][[self.selectedRowArray[0] intValue]];
-    NSString *cityName = self.districtNameArray[1][[self.selectedRowArray[0] intValue]][[self.selectedRowArray[1] intValue]];
-    NSString *districtName = self.districtNameArray[2][[self.selectedRowArray[0] intValue]][[self.selectedRowArray[1] intValue]][[self.selectedRowArray[2] intValue]];
-    NSLog(@"%@", [NSString stringWithFormat:@"省：%@，市：%@，区：%@", provinceName, cityName, districtName]);
 }
 
 #pragma mark - getters and setters
 - (JJDistrictPickerView *)districtPickerView {
     if (nil == _districtPickerView) {
-        _districtPickerView = [[JJDistrictPickerView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 300)];
+        _districtPickerView = [[JJDistrictPickerView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
         _districtPickerView.pickerView.delegate = self;
         _districtPickerView.pickerView.dataSource = self;
+        _districtPickerView.delegate = self;
     }
     return _districtPickerView;
 }

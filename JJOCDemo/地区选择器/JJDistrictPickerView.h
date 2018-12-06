@@ -10,9 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol JJDistrictPickerViewDelegate <NSObject>
+
+- (void)didClickConfirmButton;
+
+@end
+
 @interface JJDistrictPickerView : UIView
 
 @property (nonatomic, strong) UIPickerView *pickerView;
+
+@property (nonatomic, weak) id<JJDistrictPickerViewDelegate> delegate;
+
 
 @end
 

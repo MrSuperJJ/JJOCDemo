@@ -9,9 +9,6 @@
 #import "JJQQViewController.h"
 #import "JJQQCustomNavBar.h"
 
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
-
 #define HeaderHeight 160.f
 
 @interface JJQQViewController () <UITableViewDelegate, UITableViewDataSource>

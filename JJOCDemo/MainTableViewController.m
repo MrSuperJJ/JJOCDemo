@@ -12,9 +12,7 @@
 #import "JJQQViewController.h"
 #import "JJImageBrowserViewController.h"
 #import "JJDistrictPickerViewController.h"
-
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#import "JJAnimationImageViewController.h"
 
 static NSString *mainCellIdentifier = @"MainTableViewCell";
 
@@ -31,7 +29,7 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
     [super viewDidLoad];
     
     self.title = @"Main";
-    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件", @"图片浏览器", @"地区选择器"];
+    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件", @"图片浏览器", @"地区选择器", @"UIImageView动画图片"];
     
     [self.view addSubview:self.tableView];
 }
@@ -87,6 +85,9 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
         }
         case 4:
             detailViewController = [[JJDistrictPickerViewController alloc] init];
+            break;
+        case 5:
+            detailViewController = [[JJAnimationImageViewController alloc] init];
             break;
         default:
             break;
