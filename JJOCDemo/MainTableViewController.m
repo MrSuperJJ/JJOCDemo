@@ -13,6 +13,7 @@
 #import "JJImageBrowserViewController.h"
 #import "JJDistrictPickerViewController.h"
 #import "JJAnimationImageViewController.h"
+#import "DLNADeviceListViewController.h"
 
 static NSString *mainCellIdentifier = @"MainTableViewCell";
 
@@ -29,7 +30,7 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
     [super viewDidLoad];
     
     self.title = @"Main";
-    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件", @"图片浏览器", @"地区选择器", @"UIImageView动画图片"];
+    self.tableResultArray = @[@"美团下拉刷新", @"微信浮窗", @"QQ可拉伸头部控件", @"图片浏览器", @"地区选择器", @"UIImageView动画图片", @"DLNA"];
     
     [self.view addSubview:self.tableView];
 }
@@ -89,6 +90,8 @@ static NSString *mainCellIdentifier = @"MainTableViewCell";
         case 5:
             detailViewController = [[JJAnimationImageViewController alloc] init];
             break;
+        case 6:
+            detailViewController = [[DLNADeviceListViewController alloc] init];
         default:
             break;
     }

@@ -5,4 +5,8 @@ target 'JJOCDemo' do
 	pod 'MJRefresh’
 	pod 'SDWebImage'
 	pod 'Masonry'
+	pod 'CocoaAsyncSocket'
+	pod "GCDWebServer"
+  	pod "GCDWebServer/WebUploader"
+  	pod "GCDWebServer/WebDAV"
 end

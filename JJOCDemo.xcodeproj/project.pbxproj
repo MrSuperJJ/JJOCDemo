@@ -27,6 +27,19 @@
 		C7B546A121AFD894006CAE26 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B546A021AFD894006CAE26 /* MainTableViewController.m */; };
 		C7B546A821AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B546A721AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m */; };
 		C7B546AB21AFE428006CAE26 /* JJMeituanRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B546AA21AFE428006CAE26 /* JJMeituanRefreshHeader.m */; };
+		C7E7C23722DB673D00FB01FB /* DLNASourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C23622DB673D00FB01FB /* DLNASourceViewController.m */; };
+		C7E7C23A22DB6D9F00FB01FB /* DLNADeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C23922DB6D9F00FB01FB /* DLNADeviceListViewController.m */; };
+		C7E7C25422DB6E6C00FB01FB /* CLUPnPAVPositionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C23F22DB6E6C00FB01FB /* CLUPnPAVPositionInfo.m */; };
+		C7E7C25522DB6E6C00FB01FB /* CLUPnPAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C24122DB6E6C00FB01FB /* CLUPnPAction.m */; };
+		C7E7C25622DB6E6C00FB01FB /* SetUrl.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E7C24322DB6E6C00FB01FB /* SetUrl.xml */; };
+		C7E7C25722DB6E6C00FB01FB /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C24722DB6E6C00FB01FB /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C7E7C25822DB6E6C00FB01FB /* CLUPnPDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C24822DB6E6C00FB01FB /* CLUPnPDevice.m */; };
+		C7E7C25922DB6E6C00FB01FB /* MRDLNA.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C24A22DB6E6C00FB01FB /* MRDLNA.m */; };
+		C7E7C25A22DB6E6C00FB01FB /* CLUPnPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C24B22DB6E6C00FB01FB /* CLUPnPServer.m */; };
+		C7E7C25B22DB6E6C00FB01FB /* CLUPnPRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C24D22DB6E6C00FB01FB /* CLUPnPRenderer.m */; };
+		C7E7C25C22DB6E6C00FB01FB /* StopAction.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C25022DB6E6C00FB01FB /* StopAction.m */; };
+		C7E7C25D22DB6E6C00FB01FB /* Device.xml in Resources */ = {isa = PBXBuildFile; fileRef = C7E7C25122DB6E6C00FB01FB /* Device.xml */; };
+		C7E7C2A822DB844200FB01FB /* DLNAPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7C2A722DB844200FB01FB /* DLNAPlayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +84,32 @@
 		C7B546A721AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJMeituanPullRefreshViewController.m; sourceTree = "<group>"; };
 		C7B546A921AFE428006CAE26 /* JJMeituanRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJMeituanRefreshHeader.h; sourceTree = "<group>"; };
 		C7B546AA21AFE428006CAE26 /* JJMeituanRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJMeituanRefreshHeader.m; sourceTree = "<group>"; };
+		C7E7C23522DB673D00FB01FB /* DLNASourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLNASourceViewController.h; sourceTree = "<group>"; };
+		C7E7C23622DB673D00FB01FB /* DLNASourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLNASourceViewController.m; sourceTree = "<group>"; };
+		C7E7C23822DB6D9F00FB01FB /* DLNADeviceListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLNADeviceListViewController.h; sourceTree = "<group>"; };
+		C7E7C23922DB6D9F00FB01FB /* DLNADeviceListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLNADeviceListViewController.m; sourceTree = "<group>"; };
+		C7E7C23F22DB6E6C00FB01FB /* CLUPnPAVPositionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLUPnPAVPositionInfo.m; sourceTree = "<group>"; };
+		C7E7C24022DB6E6C00FB01FB /* CLUPnPRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUPnPRenderer.h; sourceTree = "<group>"; };
+		C7E7C24122DB6E6C00FB01FB /* CLUPnPAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLUPnPAction.m; sourceTree = "<group>"; };
+		C7E7C24222DB6E6C00FB01FB /* CLUPnPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUPnPServer.h; sourceTree = "<group>"; };
+		C7E7C24322DB6E6C00FB01FB /* SetUrl.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SetUrl.xml; sourceTree = "<group>"; };
+		C7E7C24422DB6E6C00FB01FB /* StopAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAction.h; sourceTree = "<group>"; };
+		C7E7C24622DB6E6C00FB01FB /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		C7E7C24722DB6E6C00FB01FB /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		C7E7C24822DB6E6C00FB01FB /* CLUPnPDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLUPnPDevice.m; sourceTree = "<group>"; };
+		C7E7C24922DB6E6C00FB01FB /* CLUPnPResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUPnPResponseDelegate.h; sourceTree = "<group>"; };
+		C7E7C24A22DB6E6C00FB01FB /* MRDLNA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRDLNA.m; sourceTree = "<group>"; };
+		C7E7C24B22DB6E6C00FB01FB /* CLUPnPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLUPnPServer.m; sourceTree = "<group>"; };
+		C7E7C24C22DB6E6C00FB01FB /* CLUPnPAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUPnPAction.h; sourceTree = "<group>"; };
+		C7E7C24D22DB6E6C00FB01FB /* CLUPnPRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLUPnPRenderer.m; sourceTree = "<group>"; };
+		C7E7C24E22DB6E6C00FB01FB /* CLUPnPAVPositionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUPnPAVPositionInfo.h; sourceTree = "<group>"; };
+		C7E7C24F22DB6E6C00FB01FB /* CLUPnP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUPnP.h; sourceTree = "<group>"; };
+		C7E7C25022DB6E6C00FB01FB /* StopAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAction.m; sourceTree = "<group>"; };
+		C7E7C25122DB6E6C00FB01FB /* Device.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Device.xml; sourceTree = "<group>"; };
+		C7E7C25222DB6E6C00FB01FB /* MRDLNA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRDLNA.h; sourceTree = "<group>"; };
+		C7E7C25322DB6E6C00FB01FB /* CLUPnPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLUPnPDevice.h; sourceTree = "<group>"; };
+		C7E7C2A622DB844200FB01FB /* DLNAPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLNAPlayViewController.h; sourceTree = "<group>"; };
+		C7E7C2A722DB844200FB01FB /* DLNAPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLNAPlayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +213,7 @@
 		C7B5468821AFCF89006CAE26 /* JJOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C7E7C23122DB664C00FB01FB /* DLNA */,
 				C77F556621B7895800221679 /* UIImageView动画图片 */,
 				C7714F0221B6149E000E09B4 /* 地区选择器 */,
 				C7714EFB21B61064000E09B4 /* 图片浏览器 */,
@@ -202,6 +242,63 @@
 				C7B546AA21AFE428006CAE26 /* JJMeituanRefreshHeader.m */,
 			);
 			path = "美团下拉刷新";
+			sourceTree = "<group>";
+		};
+		C7E7C23122DB664C00FB01FB /* DLNA */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7C23D22DB6E6C00FB01FB /* libs */,
+				C7E7C23522DB673D00FB01FB /* DLNASourceViewController.h */,
+				C7E7C23622DB673D00FB01FB /* DLNASourceViewController.m */,
+				C7E7C23822DB6D9F00FB01FB /* DLNADeviceListViewController.h */,
+				C7E7C23922DB6D9F00FB01FB /* DLNADeviceListViewController.m */,
+				C7E7C2A622DB844200FB01FB /* DLNAPlayViewController.h */,
+				C7E7C2A722DB844200FB01FB /* DLNAPlayViewController.m */,
+			);
+			path = DLNA;
+			sourceTree = "<group>";
+		};
+		C7E7C23D22DB6E6C00FB01FB /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7C23E22DB6E6C00FB01FB /* MRDLNA */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		C7E7C23E22DB6E6C00FB01FB /* MRDLNA */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7C23F22DB6E6C00FB01FB /* CLUPnPAVPositionInfo.m */,
+				C7E7C24022DB6E6C00FB01FB /* CLUPnPRenderer.h */,
+				C7E7C24122DB6E6C00FB01FB /* CLUPnPAction.m */,
+				C7E7C24222DB6E6C00FB01FB /* CLUPnPServer.h */,
+				C7E7C24322DB6E6C00FB01FB /* SetUrl.xml */,
+				C7E7C24422DB6E6C00FB01FB /* StopAction.h */,
+				C7E7C24522DB6E6C00FB01FB /* MRC */,
+				C7E7C24822DB6E6C00FB01FB /* CLUPnPDevice.m */,
+				C7E7C24922DB6E6C00FB01FB /* CLUPnPResponseDelegate.h */,
+				C7E7C24A22DB6E6C00FB01FB /* MRDLNA.m */,
+				C7E7C24B22DB6E6C00FB01FB /* CLUPnPServer.m */,
+				C7E7C24C22DB6E6C00FB01FB /* CLUPnPAction.h */,
+				C7E7C24D22DB6E6C00FB01FB /* CLUPnPRenderer.m */,
+				C7E7C24E22DB6E6C00FB01FB /* CLUPnPAVPositionInfo.h */,
+				C7E7C24F22DB6E6C00FB01FB /* CLUPnP.h */,
+				C7E7C25022DB6E6C00FB01FB /* StopAction.m */,
+				C7E7C25122DB6E6C00FB01FB /* Device.xml */,
+				C7E7C25222DB6E6C00FB01FB /* MRDLNA.h */,
+				C7E7C25322DB6E6C00FB01FB /* CLUPnPDevice.h */,
+			);
+			path = MRDLNA;
+			sourceTree = "<group>";
+		};
+		C7E7C24522DB6E6C00FB01FB /* MRC */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7C24622DB6E6C00FB01FB /* GDataXMLNode.h */,
+				C7E7C24722DB6E6C00FB01FB /* GDataXMLNode.m */,
+			);
+			path = MRC;
 			sourceTree = "<group>";
 		};
 		F8669B7D43461FB295A237CE /* Frameworks */ = {
@@ -271,6 +368,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7E7C25622DB6E6C00FB01FB /* SetUrl.xml in Resources */,
+				C7E7C25D22DB6E6C00FB01FB /* Device.xml in Resources */,
 				C7B5469621AFCF8B006CAE26 /* LaunchScreen.storyboard in Resources */,
 				C7B5469321AFCF8B006CAE26 /* Assets.xcassets in Resources */,
 			);
@@ -310,12 +409,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JJOCDemo/Pods-JJOCDemo-resources.sh",
+				"${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GCDWebUploader.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,19 +434,30 @@
 				46F47E4F21B3FB4F00FA1CC3 /* JJWeChatFloatingButton.m in Sources */,
 				46F47E5521B3FB8D00FA1CC3 /* JJWeChatViewController.m in Sources */,
 				C7B546AB21AFE428006CAE26 /* JJMeituanRefreshHeader.m in Sources */,
+				C7E7C25422DB6E6C00FB01FB /* CLUPnPAVPositionInfo.m in Sources */,
 				C7B546A121AFD894006CAE26 /* MainTableViewController.m in Sources */,
+				C7E7C23A22DB6D9F00FB01FB /* DLNADeviceListViewController.m in Sources */,
+				C7E7C25C22DB6E6C00FB01FB /* StopAction.m in Sources */,
 				C7714F0821B62C3C000E09B4 /* JJDistrictPickerView.m in Sources */,
+				C7E7C25722DB6E6C00FB01FB /* GDataXMLNode.m in Sources */,
+				C7E7C25A22DB6E6C00FB01FB /* CLUPnPServer.m in Sources */,
+				C7E7C25822DB6E6C00FB01FB /* CLUPnPDevice.m in Sources */,
+				C7E7C25922DB6E6C00FB01FB /* MRDLNA.m in Sources */,
 				46F47E5921B4022500FA1CC3 /* JJQQViewController.m in Sources */,
 				46F47E5C21B405F500FA1CC3 /* JJQQCustomNavBar.m in Sources */,
 				46F47E5121B3FB4F00FA1CC3 /* JJAnimatorView.m in Sources */,
 				46F47E5021B3FB4F00FA1CC3 /* JJNextViewController.m in Sources */,
+				C7E7C25522DB6E6C00FB01FB /* CLUPnPAction.m in Sources */,
 				46F47E4E21B3FB4F00FA1CC3 /* JJAnimator.m in Sources */,
 				C77F556521B7890600221679 /* JJAnimationImageViewController.m in Sources */,
+				C7E7C25B22DB6E6C00FB01FB /* CLUPnPRenderer.m in Sources */,
 				C7B546A821AFDE8D006CAE26 /* JJMeituanPullRefreshViewController.m in Sources */,
 				C7B5469921AFCF8B006CAE26 /* main.m in Sources */,
 				C7714EFE21B61073000E09B4 /* JJImageBrowserViewController.m in Sources */,
+				C7E7C2A822DB844200FB01FB /* DLNAPlayViewController.m in Sources */,
 				46F47E5221B3FB4F00FA1CC3 /* JJSemiCircleView.m in Sources */,
 				C7714F0521B6150B000E09B4 /* JJDistrictPickerViewController.m in Sources */,
+				C7E7C23722DB673D00FB01FB /* DLNASourceViewController.m in Sources */,
 				C7B5468B21AFCF89006CAE26 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +596,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAT87H825N;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JJOCDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GCDWebServer\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"${SDKROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = JJOCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,6 +625,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAT87H825N;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JJOCDemo/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GCDWebServer\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"${SDKROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = JJOCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
